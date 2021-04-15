@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding_card_item">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/elevation_card_view"
+        app:cardCornerRadius="@dimen/cardCornerRadius"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:id="@+id/container_item_itune"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image_itune"
+                android:layout_width="@dimen/width_image_list"
+                android:layout_height="@dimen/width_image_list"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin_item_desc"
+                android:scaleType="centerInside" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/image_itune"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/artist_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/dimen_margin"
+                    android:textSize="@dimen/text_size_desc_list_item" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/track_container_itune"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/track_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="@dimen/dimen_margin"
+                        android:layout_weight="1"
+                        android:textAlignment="viewStart"
+                        android:textSize="@dimen/text_size_desc_list_item" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/track_price"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="@dimen/dimen_margin"
+                        android:layout_weight="0.3"
+                        android:background="@drawable/shapes"
+                        android:gravity="center"
+                        android:textSize="@dimen/text_size_desc_list_item" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/release_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/dimen_margin"
+                    android:textAlignment="viewStart"
+                    android:textSize="@dimen/text_size_desc_list_item" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/primary_genre_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/dimen_margin"
+                    android:textAlignment="viewStart"
+                    android:textSize="@dimen/text_size_desc_list_item" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

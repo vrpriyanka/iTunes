@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">iTunes</string>
+    <string name="an_error_occurred_while_loading_data">An error occurred while loading data</string>
+    <string name="enter_artist">Enter Artist</string>
+    <string name="search">SEARCH</string>
+    <string name="artist">"Artist: "</string>
+    <string name="track">"Track: "</string>
+</resources>

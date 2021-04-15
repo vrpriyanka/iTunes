@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_navigation"
+    app:startDestination="@id/search_fragment">
+
+    <fragment
+        android:id="@+id/search_fragment"
+        android:name="com.ragini.artistdataitunes.view.SearchFragment"
+        android:label="search_fragment"
+        tools:layout="@layout/search_fragment">
+        <argument
+            android:name="argITuneItem"
+            android:id="@+id/action_item_click_to_iTuneListFragment"
+            app:destination="@id/itune_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/itune_fragment"
+        android:name="com.ragini.artistdataitunes.view.ListFragment"
+        android:label="itune_list_fragment"
+        tools:layout="@layout/fragment_list">
+    </fragment>
+</navigation>
